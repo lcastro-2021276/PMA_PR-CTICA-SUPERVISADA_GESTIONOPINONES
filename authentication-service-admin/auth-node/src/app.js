@@ -4,7 +4,7 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import { validateJWT } from '../middlewares/auth.middleware.JS';
+import { validateJWT } from '../middlewares/auth.middleware.js';
 
 import authRoutes from './auth/auth.routes.js';
 import userRoutes from './users/user.routes.js';
