@@ -1,7 +1,7 @@
 'use strict';
 
 import dotenv from 'dotenv';
-import { dbConnection } from './src/configs/db.js';
+import { connectDB } from './src/configs/db.js';
 import { createApp } from './src/app.js';
 
 dotenv.config();
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 const startServer = async () => {
   try {
-    await dbConnection();
+    await connectDB();
 
     const app = createApp();
 
